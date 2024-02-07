@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Wayne TV</title>
+    <style>
+     
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo">Wayne TV</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Photo</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="card-image" style="text-align: center;">
+            <img src="cover blk.jpg" alt="profile" style="max-width: 35%; height: 20%; display: block; margin: 0 auto;">
+            <h1>Welcome to Wayne TV</h1>
+            <p>Come with me and my partner as we discover amazing places accessible via motorcycle.</p>
+            <a href="#features" class="waves-effect waves-light btn">Browse Photo</a>
+        </div>
+    </section>
+    
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="bb.jpg" alt="bb">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">LoVenture</span>
+                            <p>Riding Forever, Vlogging together: Our Journey on Two Wheels!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="Profile.jpg" alt="profile">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Safety in Riding</span>
+                            <p>Promoting Safety on Two Wheels,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="pro.jpg" alt="pro">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Capturing our Adventure</span>
+                            <p>"Through the Lens of Adventure: Capturing Every Thrilling Moment!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="ker.jpg" alt="ker">
+                        </div>
+                        <div class="card-content">
+                            <h3>StixN'Stuffs</h3>
+                            <p>Personalize Your Ride, Show Your Style!</p>
+                            <ul>
+                                <li>Explore, Inspire, and</li>
+                                <li>Embark on the Journey: Explore with Expedition Essence!</li>
+                            </ul>
+                            <a href="#contact" class="waves-effect waves-light btn">free Stuffs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="mio.jpg" alt="mio">
+                        </div>
+                        <div class="card-content">
+                            <h3>Roaring Through the Curves</h3>
+                            <p>Feeling Alive in Every Twist and Turn</p>
+                            <ul>
+                                <li>#BornToRide</li>
+                                <li>#FreedomOnTwoWheels</li>
+                                <li>#VoyageVibe</li>
+                                <li>#AdventureAwaits</li>
+                            </ul>
+                            <a href="#contact" class="waves-effect waves-light btn">Join us now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">  <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to get in touch.</p>
+        <form>
+            <div class="input-field">
+                <input type="text" id="name" class="validate">
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" class="validate">
+                <label for="email">Email Address</label>
+            </div>
+            <div class="input-field">
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+    </section>
+    
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog</h2>
+
+            
+            <form id="createBlogForm">
+                <label for="blogTitle">Blog Title:</label>
+                <input type="text" id="blogTitle" required>
+                <label for="blogContent">Blog Content:</label>
+                <textarea id="blogContent" required></textarea>
+                <button type="submit" class="waves-effect waves-light btn">Create Blog Post</button>
+            </form>
+
+           
+            <div id="blogPosts"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h5>Contact Us</h5>
+                    <p>If you have any questions or inquiries, feel free to get in touch.</p>
+                    <ul>
+                        <li>Email: cheztermahilum14@gmail.com</li>
+                        <li>Phone: 09091809646</li>
+                        <li>Address: Toboso, Negros Occidental</li>
+                    </ul>
+                </div>
+                <div class="col s12 m6">
+                    <h5>Follow Us on All Platforms</h5>
+                    <p>Stay connected with us on social media.</p>
+                    <ul class="social-icons">
+                        <li><a href="https://web.facebook.com/ChezterWayneMahilum"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/ChezterWayne"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/chezter_wayne/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/@waynetv357"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="center-align">&copy; 2021 Wayne TV. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            var createBlogForm = document.getElementById('createBlogForm');
+            createBlogForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                var blogTitle = document.getElementById('blogTitle').value;
+                var blogContent = document.getElementById('blogContent').value;
+
+                var newBlogPost = document.createElement('div');
+                newBlogPost.classList.add('blog-post');
+                newBlogPost.innerHTML = '<h3>' + blogTitle + '</h3>' +
+                                       '<p>Published on: ' + new Date().toLocaleDateString() + '</p>' +
+                                       '<p>' + blogContent + '</p>';
+
+                document.getElementById('blogPosts').appendChild(newBlogPost);
+
+                document.getElementById('blogTitle').value = '';
+                document.getElementById('blogContent').value = '';
+            });
+        });
+    </script>
+</body>
+</html>
